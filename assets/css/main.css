@@ -1985,9 +1985,11 @@ button,
       line-height: 1;
       text-transform: none !important;
       font-family: 'Font Awesome 5 Free';
-      font-weight: 900; }
-    #sidebar .toggle:before {
-      content: '\f0c9';
+      font-weight: 900;
+  }
+  /* Default: Show Hamburger Icon (☰) */
+  #sidebar .toggle:before {
+      content: '\f0c9'; /* FontAwesome bars (☰) */
       font-size: 2rem;
       height: inherit;
       left: 0;
@@ -1995,7 +1997,12 @@ button,
       position: absolute;
       text-indent: 0;
       top: 0;
-      width: inherit; }
+      width: inherit;
+  }
+  /* When Sidebar is Open, Change to Close Icon (✖) */
+  #sidebar:not(.inactive) .toggle:before {
+    content: '\f00d'; /* FontAwesome close (✖) */
+  }
   #sidebar.inactive {
     margin-left: -26em; }
   @media screen and (max-width: 1680px) {

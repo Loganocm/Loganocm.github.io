@@ -89,17 +89,21 @@
 					.appendTo($head);
 
 		// Toggle.
-			$('<a href="#sidebar" class="toggle">Toggle</a>')
+			$('<a href="#sidebar" id="sidebarToggle" class="toggle"><i class="fas fa-bars"></i></a>')
 				.appendTo($sidebar)
 				.on('click', function(event) {
-
-					// Prevent default.
-						event.preventDefault();
-						event.stopPropagation();
-
-					// Toggle.
-						$sidebar.toggleClass('inactive');
-
+					event.preventDefault();
+					event.stopPropagation();
+	
+					// Toggle sidebar state
+					$sidebar.toggleClass('inactive');
+	
+					// Change the button icon
+					if ($sidebar.hasClass('inactive')) {
+						$(this).html('<i class="fas fa-bars"></i>'); // Show hamburger icon
+					} else {
+						$(this).html('<i class="fas fa-times"></i>'); // Show close icon
+					}
 				});
 
 		// Events.
