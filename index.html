@@ -235,9 +235,9 @@
 
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            max-width: 1000px;
+            grid-template-columns: repeat(2, 1fr); /* Two columns */
+            gap: 20px; /* Reduced gap */
+            max-width: 800px; /* Reduced max-width */
             margin: 0 auto;
         }
 
@@ -245,33 +245,33 @@
             background: rgba(255, 255, 255, 0.15);
             backdrop-filter: blur(15px);
             border: 2px solid rgba(255, 255, 255, 0.2);
-            padding: 40px 30px;
-            border-radius: 20px;
+            padding: 25px 20px; /* Reduced padding */
+            border-radius: 15px; /* Slightly smaller border-radius */
             transition: all 0.3s ease;
         }
 
         .skill-item:hover {
-            transform: translateY(-10px);
+            transform: translateY(-8px);
             background: rgba(255, 255, 255, 0.2);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
 
         .skill-icon {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
+            font-size: 2.5rem; /* Reduced icon size */
+            margin-bottom: 15px; /* Reduced margin */
             display: block;
         }
 
         .skill-item h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
+            font-size: 1.3rem; /* Reduced font size */
+            margin-bottom: 10px; /* Reduced margin */
             font-weight: 600;
         }
 
         .skill-item p {
             opacity: 0.9;
-            font-size: 1rem;
-            line-height: 1.6;
+            font-size: 0.9rem; /* Reduced font size */
+            line-height: 1.5;
         }
 
         /* Projects Panel (Panel 4) */
@@ -826,34 +826,24 @@
                     <h2>Skills & Expertise</h2>
                     <div class="skills-grid">
                         <div class="skill-item">
-                            <span class="skill-icon">☕</span>
-                            <h3>Java & Spring Boot</h3>
-                            <p>Spring Framework, Spring Security, Spring Data JPA, Hibernate, Maven, Gradle, JUnit Testing</p>
+                            <span class="skill-icon">💻</span>
+                            <h3>Backend Development</h3>
+                            <p>Building robust backend systems with Java, Spring Boot, Python, and Node.js.</p>
                         </div>
                         <div class="skill-item">
                             <span class="skill-icon">🗄️</span>
                             <h3>Database Management</h3>
-                            <p>MySQL, PostgreSQL, MongoDB, Redis, Database Design, Query Optimization, Transactions</p>
+                            <p>Experience with relational databases like PostgreSQL, including design and optimization.</p>
                         </div>
                         <div class="skill-item">
                             <span class="skill-icon">🌐</span>
                             <h3>REST API Development</h3>
-                            <p>RESTful Services, API Design, OpenAPI/Swagger, JSON/XML, HTTP Methods, Status Codes</p>
+                            <p>Designing and building secure and well-documented RESTful APIs for web applications.</p>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-icon">🚀</span>
-                            <h3>Microservices Architecture</h3>
-                            <p>Spring Cloud, Docker, Kubernetes, Service Discovery, Circuit Breakers, API Gateway</p>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-icon">🔒</span>
-                            <h3>Backend Security</h3>
-                            <p>Spring Security, OAuth 2.0, JWT, Authentication, Authorization, Input Validation, OWASP</p>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-icon">⚡</span>
-                            <h3>Performance & Scalability</h3>
-                            <p>Caching (Redis), Load Balancing, Async Processing, Thread Safety, JVM Optimization</p>
+                            <span class="skill-icon">🤖</span>
+                            <h3>Prompt Engineering</h3>
+                            <p>Crafting effective prompts to interact with and control large language models.</p>
                         </div>
                     </div>
                 </div>
