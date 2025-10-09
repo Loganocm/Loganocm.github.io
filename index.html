@@ -440,19 +440,55 @@
             .projects-carousel {
                 flex-wrap: wrap;
                 justify-content: center;
+                gap: 5px;
             }
 
             .project-card {
-                min-width: 300px;
+                min-width: 200px;
                 flex: 0 1 calc(50% - 20px);
+                padding: 5px;
+                min-height: 250px;
+            }
+
+            .project-emoji {
+                font-size: 3.5rem;
+            }
+
+            .project-title {
+                font-size: 1.6rem;
+            }
+
+            .project-description {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            .projects-carousel {
+                gap: 5px;
+            }
+
+            .project-card {
+                padding: 5px;
+                min-height: 1px;
+            }
+
+            .project-emoji {
+                font-size: 2rem;
+            }
+
+            .project-title {
+                font-size: 1rem;
+            }
+
+            .project-description {
+                font-size: 0.8rem;
             }
         }
 
         @media (max-width: 768px) {
             .panel {
                 padding: 30px 20px;
-                overflow-y: auto;
-                overflow-x: hidden;
             }
 
             .portfolio-container {
@@ -549,29 +585,28 @@
             }
 
             .projects-carousel {
-                flex-direction: column;
-                gap: 25px;
-                max-width: 350px;
+                gap: 10px;
+                max-width: 250px;
                 margin: 0 auto;
             }
 
             .project-card {
-                padding: 25px 20px;
+                padding: 2px;
                 min-height: auto;
             }
 
             .project-emoji {
-                font-size: 2.5rem;
+                font-size: 1.5rem;
                 margin-bottom: 15px;
             }
 
             .project-title {
-                font-size: 1.4rem;
+                font-size: 0.8rem;
                 margin-bottom: 15px;
             }
 
             .project-description {
-                font-size: 0.95rem;
+                font-size: 0.8rem;
                 margin-bottom: 20px;
             }
 
@@ -684,7 +719,24 @@
             }
 
             .projects-carousel {
-                max-width: 280px;
+                gap: 15px;
+                max-width: 220px;
+            }
+
+            .project-card {
+                padding: 5px;
+            }
+
+            .project-emoji {
+                font-size: 1rem;
+            }
+
+            .project-title {
+                font-size: 0.8rem;
+            }
+
+            .project-description {
+                font-size: 0.7rem;
             }
 
             .contact-methods {
